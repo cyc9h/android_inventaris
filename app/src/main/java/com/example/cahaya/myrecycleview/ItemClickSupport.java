@@ -1,7 +1,9 @@
-package com.example.cahaya.myrecyclerview;
+package com.example.cahaya.myrecycleview;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import com.example.cahaya.myrecyclerview.R;
 
 public class ItemClickSupport {
     private final RecyclerView mRecyclerView;

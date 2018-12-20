@@ -1,6 +1,7 @@
-package com.example.cahaya.myrecyclerview;
+package com.example.cahaya.myrecycleview;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,16 +12,21 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.cahaya.myrecyclerview.R;
 
 import java.util.ArrayList;
 
 public class CardViewInventarisAdapter extends RecyclerView.Adapter<CardViewInventarisAdapter.CardViewViewHolder>{
+
     private ArrayList<Inventaris>listInventaris;
     private Context context;
+    OnItemClick handler;
 
-    public CardViewInventarisAdapter(Context context) {
-        this.context = context;
+    public void setHandler(OnItemClick clilckHandler){
+        handler = clilckHandler;
     }
+
+
 
     public ArrayList<Inventaris> getListInventaris() {
         return listInventaris;
@@ -37,7 +43,7 @@ public class CardViewInventarisAdapter extends RecyclerView.Adapter<CardViewInve
     }
 
     @Override
-    public void onBindViewHolder(CardViewViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CardViewViewHolder holder, int position) {
 
         Inventaris p = getListInventaris().get(position);
 
@@ -77,4 +83,10 @@ public class CardViewInventarisAdapter extends RecyclerView.Adapter<CardViewInve
             btnDetail = (Button)itemView.findViewById(R.id.btn_detail);
         }
     }
+
+    public interface OnItemClick{
+        void click(Inventaris m);
+    }
+
+
 }

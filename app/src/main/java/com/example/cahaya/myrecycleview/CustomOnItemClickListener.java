@@ -1,4 +1,4 @@
-package com.example.cahaya.myrecyclerview;
+package com.example.cahaya.myrecycleview;
 
 import android.view.View;
 

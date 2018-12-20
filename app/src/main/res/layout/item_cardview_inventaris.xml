@@ -68,6 +68,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Detail"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:layout_below="@id/tv_jumlah"
             android:textColorLink="@color/colorAccent"
             android:textSize="11sp"
             android:onClick="detail"/>

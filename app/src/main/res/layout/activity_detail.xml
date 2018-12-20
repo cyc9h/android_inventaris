@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    android:label="Inventaris Labor"
+    tools:context="com.example.cahaya.myrecycleview.DetailActivity">
 
     <ImageView
         android:id="@+id/img_item_photo"
@@ -33,9 +34,9 @@
         android:id="@+id/id_edit"
         android:layout_width="255dp"
         android:layout_height="24dp"
-        android:layout_above="@+id/nama"
-        android:layout_alignStart="@+id/img_item_photo"
-        android:layout_alignLeft="@+id/img_item_photo"
+        android:layout_above="@id/nama"
+        android:layout_alignStart="@id/img_item_photo"
+        android:layout_alignLeft="@id/img_item_photo"
         android:layout_marginBottom="-151dp"
         android:layout_toEndOf="@+id/spesifikasi"
         android:layout_toRightOf="@+id/spesifikasi"
@@ -128,8 +129,8 @@
         android:id="@+id/harga_edit"
         android:layout_width="255dp"
         android:layout_height="24dp"
-        android:layout_alignStart="@+id/img_item_photo"
-        android:layout_alignLeft="@+id/img_item_photo"
+        android:layout_alignStart="@id/img_item_photo"
+        android:layout_alignLeft="@id/img_item_photo"
         android:layout_alignTop="@+id/tahun"
         android:layout_marginStart="-1dp"
         android:layout_marginLeft="-1dp"
@@ -141,8 +142,8 @@
         android:id="@+id/jumlah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/id"
-        android:layout_alignLeft="@+id/id"
+        android:layout_alignStart="@id/id"
+        android:layout_alignLeft="@id/id"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
@@ -163,8 +164,8 @@
         android:id="@+id/satuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/id"
-        android:layout_alignRight="@+id/id"
+        android:layout_alignEnd="@id/id"
+        android:layout_alignRight="@id/id"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="-32dp"
         android:layout_marginRight="-32dp"
@@ -207,40 +208,43 @@
     <Button
         android:id="@+id/bagikan"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="82dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="100dp"
         android:layout_marginEnd="-62dp"
         android:layout_marginRight="-62dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="17dp"
         android:background="@drawable/bagikan"
-        android:textColorLink="@color/colorAccent" />
+        android:textColorLink="@color/colorAccent"
+        android:layout_marginLeft="100dp" />
 
     <Button
         android:id="@+id/ubah"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="82dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="-62dp"
         android:layout_marginRight="-62dp"
         android:layout_marginBottom="17dp"
         android:background="@drawable/ubah"
-        android:textColorLink="@color/colorAccent" />
+        android:textColorLink="@color/colorAccent"
+        android:layout_marginLeft="150dp" />
 
     <Button
         android:id="@+id/hapus"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="82dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="270dp"
+        android:layout_marginStart="200dp"
         android:layout_marginEnd="-62dp"
         android:layout_marginRight="-62dp"
         android:layout_marginBottom="17dp"
         android:background="@drawable/hapus"
-        android:textColorLink="@color/colorAccent" />
+        android:textColorLink="@color/colorAccent"
+        android:layout_marginLeft="200dp" />
 
-</android.support.constraint.RelativeLayout>
+</RelativeLayout>
